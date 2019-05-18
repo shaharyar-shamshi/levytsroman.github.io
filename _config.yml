@@ -24,7 +24,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shaharyar-shamshi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 linked_in_link: "https://www.linkedin.com/in/shaharyarshamshi/"
 github_link: "https://www.github.com/shaharyar-shamshi"
-twitter_username: ""
+twitter_username: "sshamshi"
 select_options: clear-filters HTML5 CSS3 SCSS javaScript jQuery materialize charts.js React jekyll Ruby-on-Rails Sinatra front-end back-end finished current
 sass:
   sass_dir: assets/css/main.css

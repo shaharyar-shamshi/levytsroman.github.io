@@ -1,57 +1,59 @@
 - name: web
   skills:
-    - class: html5-plain
+    - class: html51-plain
       skill_name: HTML5
-    - class: css3-plain
+    - class: css31-plain
       skill_name: CSS3
-    - class: bootstrap-plain
+    - class: bootstrap1-plain
       skill_name: Bootstrap
 
 - name: languages
   skills:
-    - class: javascript-plain
+    - class: javascript1-plain
       skill_name: JavaScript
-    - class: javaSE-plain
+    - class: javaSE1-plain
       skill_name: Java SE
-    - class: javaEE-plain
+    - class: javaEE1-plain
       skill_name: JavaEE (Servlet, JSP)
-    - class: python-plain
+    - class: python1-plain
       skill_name: python
     - class: c-plain
       skill_name: C
+    - class: c++-plain
+      skill_name: C++
 
 - name: databases
   skills:
-    - class: mongodb-plain
+    - class: mongodb1-plain
       skill_name: MongoDB
-    - class: mysql-plain
+    - class: mysql1-plain
       skill_name: MySQL
-    - class: dynamodb-plain
+    - class: dynamodb1-plain
       skill_name: Dynamo Db
-    - class: MetaBase-plain
+    - class: MetaBase1-plain
       skill_name: Metabase
 
 - name: frontend frameworks
   skills:
-    - class: react-plain
+    - class: react1-plain
       skill_name: React
 
 - name: backend frameworks
   skills:
-    - class: express-original
+    - class: express1-original
       skill_name: Express
-    - class: nodejs-plain
+    - class: nodejs1-plain
       skill_name: NodeJS
-    - class: ActionHero-plain
+    - class: ActionHero1-plain
       skill_name: ActionHero
 
 - name: devops
   skills:
-    - class: git-plain
+    - class: git1-plain
       skill_name: Git
-    - class: github-plain
+    - class: github1-plain
       skill_name: GitHub
-    - class: heroku-original
+    - class: heroku1-original
       skill_name: Heroku
 
 - name: testing
