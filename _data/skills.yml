@@ -17,9 +17,9 @@
       skill_name: JavaEE (Servlet, JSP)
     - class: python1-plain
       skill_name: python
-    - class: c-plain
+    - class: c1-plain
       skill_name: C
-    - class: c++-plain
+    - class: c++1-plain
       skill_name: C++
 
 - name: databases
