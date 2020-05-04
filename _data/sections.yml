@@ -3,7 +3,7 @@ projects:
   heading: Blogs
   words: A brief Description of my learning
   class: m7 projects
-  border: projects
+  border: Blogs
 about:
   url: /about
   heading: Me
