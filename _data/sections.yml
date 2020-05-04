@@ -1,7 +1,7 @@
 projects:
-  url: /projects
-  heading: Projects
-  words: A list of projects and experiments
+  url: /Blogs
+  heading: Blogs
+  words: A brief Description of my learning
   class: m7 projects
   border: projects
 about:
