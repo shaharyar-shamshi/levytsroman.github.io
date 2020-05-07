@@ -2,7 +2,7 @@
 layout: Blogs
 title: "Blog"
 date: "7th May 2020"
-description: "hello this is first blog"
+description: "Web Scrapping using proxy server in python"
 ---
 
 <div class="yetpublished">
@@ -14,19 +14,19 @@ description: "hello this is first blog"
     </div>
 </div>
 <div class="blog_content">
-    <span> Many a time we come across the situation where we have to scrap the website but due to various factor like
+    <span> Many a time we come across the situation where we have to scrap the website but due to various factors like
         API time restrictions
-        we are not able to scrap the website or we cannot fully scrap website before being detected as a bot. so to
+        we are not able to scrap the website or we cannot fully scrap the website before being detected as a bot. so to
         solve this issue I am going to use
-        selenium webdriver for Scrapping the website using rotating proxy so for this we require bunch of proxies if we
-        have private ips with us we can use that else
+        selenium webdriver for Scrapping the website using a rotating proxy so for this we require a bunch of proxies if we
+        have private IPs with us we can use that else
         in this blog I am going to scrap <a href="https://free-proxy-list.net/" target="_blank">
-            https://free-proxy-list.net/ </a> to get bunch of proxies
-        so overall my blog is divided into two part first is scraping to get ips and second is using that ips to scarp
+            https://free-proxy-list.net/ </a> to get a bunch of proxies
+        so overall my blog is divided into two-part first is scraping to get IPs and second is using that IPs to scarp
         our intended website. <br>
         let's begin with scraping <a href="https://free-proxy-list.net/" target="_blank"> https://free-proxy-list.net/ </a>
             <br>
-            for this we will use Beautiful Soup which is Python library for pulling data out of HTML and XML files. It
+            for this, we will use Beautiful Soup which is a Python library for pulling data out of HTML and XML files. It
             works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse
             tree. <br>
             
@@ -51,14 +51,14 @@ description: "hello this is first blog"
                     </pre>
 
         <div>
-            <span> This will give out array of ip addresses in format ip:port and we will use this ips to connect to external website
+            <span> This will give out the array of ip addresses in format ip:port and we will use this IPs to connect to external website
                 kindly note Free proxies available on the internet are always abused and end up being in blacklists used by 
                 anti-scraping tools and web servers. 
                 If you are doing serious large-scale data extraction, you should pay for some good proxies. 
             </span>
             <span> 
-                we can use any method to use the this available ips whether it be some random ip or we can use round robin to pick up the
-                ips
+                we can use any method to use this available IPs whether it be some random ip or we can use round-robin to pick up the
+                IPs
             </span>
         </div>
     </span>
