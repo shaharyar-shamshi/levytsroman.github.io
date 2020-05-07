@@ -1,12 +1,10 @@
-<div class="project row" style="background-image: url({{project.cover}}); background-size: cover;">
+<div class="project row" style="background-image: url({{project.cover}}); background-size: contain;">
   <div class="cover {% cycle 'left', 'right'%} col m5 s12">
     <div class="valign-wrapper">
       <div class="col s8 offset-s2">
         <h3 class="heading">{{project.title}}</h3>
         <!-- Modal Trigger -->
-        <button class="fill col s12 modal-trigger" href="#{{project.id}}">learn more</button>
+        <button class="fill col s12 modal-trigger"> <a href = "{{project.url}}">learn more </a></button>
       </div>
     </div>
-    <!-- Modal Structure -->
-    {% include project_modal.html %}
 </div>
