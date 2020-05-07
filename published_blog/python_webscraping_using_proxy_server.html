@@ -62,4 +62,39 @@ description: "Web Scrapping using proxy server in python"
             </span>
         </div>
     </span>
+
+    <span style = "margin-top: 30px">
+        <b>Second part consists of scraping using this IPs</b> </br>
+        We will use any of this available IPs to set manual proxy in selenium to scrap
+        suppose from array of IPs we selected the any IP using any method of our choice and it gave us
+        <u>114.119.191.83:80</u> as the ip address to be used
+        <pre>
+            <code>
+                    from selenium import webdriver
+                    from selenium.webdriver.chrome.options import Options
+                    chrome_options = Options() 
+                    chrome_options.add_argument("--headless")
+                    PROXY = '114.119.191.83:80' # this is ip address selected from array of ips
+                    webdriver.DesiredCapabilities.CHROME['proxy']={
+                        "httpProxy":PROXY,
+                        "ftpProxy":PROXY,
+                        "sslProxy":PROXY,
+                        
+                        "proxyType":"MANUAL",
+                        
+                    }
+                    driver = webdriver.Chrome(executable_path = "path",options=chrome_options)
+                        
+            </code>
+        </pre>
+
+        using this driver we can visit any web page and scrap the content of it and before being detected as the Bot we
+        can change our proxy using any ip address from array of IP addresses. <br>
+        you must be wondering about DesiredCapabilities what exactly it is . It is just a class which is used to
+        modify multiple properties of web driver. Desired Capabilities class provides 
+        a set of key-value pairs to change individual properties of web driver such as browser name, browser platform, etc and in each 
+        request those properties are used.
+        you can check different capabilities option on <a href = "https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities"> 
+        https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities </a>
+    </span>
 </div>

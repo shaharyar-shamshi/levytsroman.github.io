@@ -1,6 +1,6 @@
 - id: 2
   title: Scrapping data using proxy server in python
-  url: "hello"
+  url: "/published_blog/python_webscraping_using_proxy_server"
   cover: /assets/images/project_covers/webscrapping.jpeg
 
 # - id: 3
