@@ -931,5 +931,37 @@ nav a.button-collapse i {
 
   .about_section .skill_group {
     width: 50%; } }
+.yetpublished {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.datepublished {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px; }
+
+.blog_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-left: 25px; }
+
+.blog_content {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify; }
+
+.web-logo {
+  height: 100px;
+  width: auto; }
 
 /*# sourceMappingURL=main.css.map */

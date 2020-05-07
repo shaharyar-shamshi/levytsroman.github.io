@@ -1,10 +1,65 @@
 ---
 layout: Blogs
 title: "Blog"
-date: 2019-08-01 10:59:37 +0600
+date: "7th May 2020"
 description: "hello this is first blog"
 ---
 
-<div class = "yetpublished">
-   <h1>  Blog is yet to be published </h1>
+<div class="yetpublished">
+    <h2 style="margin-left: 20px;" class="blog_title"> Web Scrapping using proxy server in python </h2>
+    <div class="datepublished">
+        <span>
+            {{page.date}}
+        </span>
+    </div>
+</div>
+<div class="blog_content">
+    <span> Many a time we come across the situation where we have to scrap the website but due to various factor like
+        API time restrictions
+        we are not able to scrap the website or we cannot fully scrap website before being detected as a bot. so to
+        solve this issue I am going to use
+        selenium webdriver for Scrapping the website using rotating proxy so for this we require bunch of proxies if we
+        have private ips with us we can use that else
+        in this blog I am going to scrap <a href="https://free-proxy-list.net/" target="_blank">
+            https://free-proxy-list.net/ </a> to get bunch of proxies
+        so overall my blog is divided into two part first is scraping to get ips and second is using that ips to scarp
+        our intended website. <br>
+        let's begin with scraping <a href="https://free-proxy-list.net/" target="_blank"> https://free-proxy-list.net/ </a>
+            <br>
+            for this we will use Beautiful Soup which is Python library for pulling data out of HTML and XML files. It
+            works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse
+            tree. <br>
+            
+             
+            <p style="margin-top:20px"> code sample for scraping the <a href="https://free-proxy-list.net/" target="_blank"> https://free-proxy-list.net/ </a></p>
+            <pre> 
+                    <code> 
+                            from bs4 import BeautifulSoup
+                            import requests
+                            
+                            data = requests.get("https://free-proxy-list.net/")
+                            
+                            parseddata = BeautifulSoup(data.text, "html.parser")
+                            ips = []
+                            raw_ips = parseddata.findAll('table')[0].tbody.findAll('tr')
+                            for ip in raw_ips:
+                                data = ip.findAll('td')
+                                ips.append(data[0].contents[0] + ":" + data[1].contents[0])
+                            
+                                
+                    </code> 
+                    </pre>
+
+        <div>
+            <span> This will give out array of ip addresses in format ip:port and we will use this ips to connect to external website
+                kindly note Free proxies available on the internet are always abused and end up being in blacklists used by 
+                anti-scraping tools and web servers. 
+                If you are doing serious large-scale data extraction, you should pay for some good proxies. 
+            </span>
+            <span> 
+                we can use any method to use the this available ips whether it be some random ip or we can use round robin to pick up the
+                ips
+            </span>
+        </div>
+    </span>
 </div>
